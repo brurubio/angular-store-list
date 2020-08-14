@@ -8,17 +8,24 @@ import { FooterComponent } from './components/footer/footer.component';
 import { StoreListComponent } from './components/store-list/store-list.component';
 import { StoreCardComponent } from './components/store-card/store-card.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { StoreFormComponent } from './components/store-form/store-form.component';
+import { HomeComponent } from './components/home/home.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     StoreListComponent,
-    StoreCardComponent
+    StoreCardComponent,
+    StoreFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

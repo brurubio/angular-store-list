@@ -1,3 +1,16 @@
-<div class="store-card">
-    <p>store-card works!</p>
+<div
+  class="store-card"
+  [routerLink]="['/store', store.id]"
+>
+  <div class="store-card__image">
+    <img [src]="store.picture" alt="">
+  </div>
+  <div class="store-card__content">
+    <div class="">
+      {{ store.name }} | {{ store.phone }}
+    </div>
+    <div class="">
+      {{ store.address }}
+    </div>
+  </div>
 </div>

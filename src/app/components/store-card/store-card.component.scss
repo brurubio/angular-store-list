@@ -1,8 +1,20 @@
 .store-card {
-    border: 1px solid lightgrey;
-    background-color: lightgrey;
-    margin: 1rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    flex: 1;
+  border: 1px solid #efefef;
+  background-color: #efefef;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &__image img {
+    width: 90px;
+  }
+
+  &__content {
+    padding-left: 0.5rem;
+    flex-grow: 1;
+  }
 }
