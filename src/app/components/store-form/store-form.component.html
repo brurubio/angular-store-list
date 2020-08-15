@@ -1,1 +1,34 @@
-<p> store view: {{ id }}</p>
+<div>
+  <header-component
+    [name]="store.name"
+    path="form"
+  ></header-component>
+  <div class="store-content">
+    <div class="store-content__image">
+      <img [src]="store.picture" alt="">
+    </div>
+    <div class="store-content__infos">
+      <div class="form-input">
+        <label>Nome:</label>
+        <input
+          [(ngModel)]="store.name"
+        />
+      </div>
+      <div class="form-input">
+        <label>Telefone:</label>
+        <input
+          [(ngModel)]="store.phone"
+        />
+      </div>
+      <div class="form-input">
+        <label>Endereço:</label>
+        <input
+          [(ngModel)]="store.address"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="store-footer">
+    <button (click)="updateData()">Salvar</button>
+  </div>
+</div>

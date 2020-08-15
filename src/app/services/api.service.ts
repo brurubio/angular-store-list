@@ -20,8 +20,13 @@ export class ApiService {
     return this.http.get<Store[]>(apiUrl);
   }
 
-  getStore(id: number): Observable<Store> {
+  getStore(id: string): Observable<Store> {
     const url = `${apiUrl}/${id}`;
     return this.http.get<Store>(url);
+  }
+
+   updateStore(store: Store) {
+    const url = `${apiUrl}/${store.id}`;
+    return this.http.put(url, store, httpOptions);
   }
 }
