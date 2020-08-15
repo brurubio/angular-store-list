@@ -32,3 +32,10 @@ To build the project run:
 ```
 
 and the build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+
+## Live
+
+It's alive, if you want just check it out:
+
+https://angular-store-list.herokuapp.com/
