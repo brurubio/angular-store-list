@@ -9,6 +9,9 @@ export class StorageService {
 
   getAll() {
     let items = [];
+    if (localStorage.length === 0) {
+      return items;
+    }
     for (let [key, value] of Object.entries(localStorage)) {
       items.push(JSON.parse(value));
     }
