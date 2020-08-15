@@ -1,9 +1,18 @@
 .header {
-    width: 100%;
-    height: 50px;
-    background-color: purple;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  &__title {
+    flex-basis: 50%;
+    margin-left: auto;
+  }
+}
+
+fa-icon {
+  cursor: pointer;
 }
