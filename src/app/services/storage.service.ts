@@ -9,22 +9,22 @@ export class StorageService {
 
   getAll() {
     let items = [];
-    if (localStorage.length === 0) {
-      return items;
-    }
     for (let [key, value] of Object.entries(localStorage)) {
-      items.push(JSON.parse(value));
+      if (key.includes('product_')) {
+        items.push(JSON.parse(value));
+      }
     }
 
     return items;
   }
 
   saveItem (item) {
-    let key = item.id;
+    let key = 'product_' + item.id;
     localStorage.setItem(key, JSON.stringify(item));
   }
 
   getItem (id) {
-    return JSON.parse(localStorage.getItem(id));
+    let key = 'product_' + id;
+    return JSON.parse(localStorage.getItem(key));
   }
 }
