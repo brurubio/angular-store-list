@@ -47,7 +47,7 @@ export class StoreListComponent implements OnInit {
 
   ngOnInit(): void {
     this.getStorage();
-    if (!this.storaged) {
+    if (this.storaged.length === 0) {
       this.loadStores();
     }
 
