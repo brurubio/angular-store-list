@@ -1,27 +1,34 @@
 # AngularStoreList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+This project use an API to get estabilishments data and keep them on browser's localStorage allowing any modifications without using any database to persit data.
 
-## Development server
+It was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Installing and Using
 
-## Code scaffolding
+To get all needed packages and libraries for this project run:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+  npm install
+```
 
-## Build
+### Development server
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+For a development server run:
+ 
+```
+  ng serve
+```
 
-## Running unit tests
+and the project will be available in `http://localhost:4200/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+### Build
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+To build the project run:
 
-## Further help
+```
+  ng build
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+and the build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
